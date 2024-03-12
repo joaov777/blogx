@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogx!</title>
+    <title>{% block title %}Blogx!{% endblock %}</title>
 </head>
 <body>
-    <h1>Welcome to Blogx!</h1>
-    <p>This is a simple home page.</p>
+    <h1>{% block heading %}Welcome to Blogx!{% endblock %}</h1>
+    <p>{% block content %} This is a simple home page. {% endblock %}</p>
 </body>
 </html>

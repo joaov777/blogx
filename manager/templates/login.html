@@ -8,6 +8,7 @@
 {% block form_action %}{% url 'login' %}{% endblock %}
 
 {% block form_content %}
+    {% csrf_token %}
     <!-- Additional form fields or overrides -->
     <!-- Example: -->
     <label for="username">Username:</label>
