@@ -1,0 +1,21 @@
+<!-- base_login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Login{% endblock %}</title>
+</head>
+<body>
+    <div>
+        <h2>{% block heading %}Login{% endblock %}</h2>
+        <form method="post" action="{% block form_action %}{% endblock %}">
+            {% csrf_token %}
+            {% block form_content %}
+                <!-- Form fields will go here -->
+            {% endblock %}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

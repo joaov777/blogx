@@ -1,0 +1,17 @@
+<!-- extended_login.html -->
+{% extends 'base_login.html' %}
+
+{% block title %}Extended Login{% endblock %}
+
+{% block heading %}Extended Login{% endblock %}
+
+{% block form_action %}{% url 'login' %}{% endblock %}
+
+{% block form_content %}
+    <!-- Additional form fields or overrides -->
+    <!-- Example: -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+{% endblock %}
